@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team X Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');</style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                
+                <div class="logo">
+                    TEAM  <span class="red-x">X</span>
+                </div>
+                
+                <div class="nav-links">
+                    <a href="mailto:wafyahmed2004@gmail.com" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <h1 class="title">
+            <img src="JOIN Our TEAM.png" alt="join Our Team" class="title-image">
+        </h1>
+        
+        <form id="applicationForm" class="form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="year">Year of Study</label>
+                <select id="year" name="year" required>
+                    <option value="">Select Year</option>
+                    <option value="1">First Year</option>
+                    <option value="2">Second Year</option>
+                    <option value="3">Third Year</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="interest">Why are you interested in joining Team X</label>
+                <textarea id="interest" name="interest" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="expectations">What do you expect from us?</label>
+                <textarea id="expectations" name="expectations" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="pastTeams">Mention teams or organizations you participated in</label>
+                <textarea id="pastTeams" name="pastTeams" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="workLife">Talk about your strengths and weaknesses in work life</label>
+                <textarea id="workLife" name="workLife" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="leadership">Do you prefer to be team leader or member and why?</label>
+                <textarea id="leadership" name="leadership" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="availability">What is your current availability in terms of hours per week?</label>
+                <input type="number" id="availability" name="availability" min="1" max="40" required>
+            </div>
+
+            <div class="form-group">
+                <label>Are you interested in any of the following committees? (Select all that apply)</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="hr" name="committees" value="HR">
+                        <label for="hr">HR</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="pr" name="committees" value="PR">
+                        <label for="pr">PR</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="oc" name="committees" value="OC">
+                        <label for="oc">OC</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="media" name="committees" value="MEDIA">
+                        <label for="media">MEDIA & MARKETING</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="skillRating">Rate yourself in each skill you picked</label>
+                <textarea id="skillRating" name="skillRating" rows="3" required></textarea>
+                    <!-- Dynamically populated based on selected committees -->
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="skillsToLearn">Which skills do you want to learn?</label>
+                <textarea id="skillsToLearn" name="skillsToLearn" rows="3" required></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn" class="submit-btn">
+                <span class="submit-icon">→</span>
+                <span class="submit-text">Submit Application</span>
+            </button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="copyright">
+                <p>© 2024 Team X. All rights reserved.</p>
+            </div>
+            <div class="social-section">
+                <span class="social-text">Follow us on social media</span>
+                <a href="https://www.instagram.com/teamx_mu/" target="_blank" class="social-link">
+                    <i class="fab fa-instagram social-icon"></i> @teamx_mu
+                </a>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
